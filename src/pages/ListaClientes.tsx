@@ -88,8 +88,8 @@ const ListaClientes = () => {
             <Link to={`/clientes/${cliente.id}`}>
               <strong>{cliente.nome}</strong>
             </Link>
-            <span>{cliente.cpfCnpj}</span>
-            <span>{cliente.email}</span>
+            <span><strong>CPF/CNPJ:</strong> {cliente.cpfCnpj}</span>
+            <span><strong>Email:</strong> {cliente.email}</span>
           </li>
         ))}
       </ul>
